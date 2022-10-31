@@ -744,7 +744,10 @@
 							<div>
 								<div class="course">
 									<div class="course__left">
-										<div class="h2 color-main course__title">Курс «Био-Имплантация»</div>
+										<div class="h2 color-main course__title course__title--with-location">
+											Курс «Био-Имплантация»
+											<span class="course__title-location">УЦ " Дентал Групп", г. Москва, Нижегородская, 7</span>
+										</div>
 										<div class="course__sub-title">Особенности работы на высокопрочных дентальных имплантах AWI из диоксида циркония</div>
 										<ul class="course__list">
 											<li class="course__list-item">
