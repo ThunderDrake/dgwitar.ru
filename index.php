@@ -733,18 +733,18 @@
 					</div>
 					<ul class="tab-list">
 						<li class="tab-list__item">
-							<button class="tab-list__item-btn active" data-tab-id="seminars">Семинары</button>
+							<button class="tab-list__item-btn active" data-tab-id="courses">Курсы</button>
 						</li>
 						<li class="tab-list__item">
 							<button class="tab-list__item-btn" data-tab-id="master-classes">Мастер-классы</button>
 						</li>
 					</ul>
-					<div class="tab-content active	" data-tab="seminars">
+					<div class="tab-content active" data-tab="courses">
 						<div class="courses education__courses">
 							<div>
 								<div class="course">
 									<div class="course__left">
-										<div class="h2 color-main course__title">Семинар «Био-Имплантация»</div>
+										<div class="h2 color-main course__title">Курс «Био-Имплантация»</div>
 										<div class="course__sub-title">Особенности работы на высокопрочных дентальных имплантах AWI из диоксида циркония</div>
 										<ul class="course__list">
 											<li class="course__list-item">
@@ -784,8 +784,8 @@
 									</div>
 									<div class="course__right">
 										<div class="course__total">
-											<p class="course__total-item">Продолжительность: <b>2 дня</b></p>
-											<p class="course__total-item">Дата начала: <b>18 апреля</b></p>
+											<p class="course__total-item">Продолжительность: <b>1 день</b></p>
+											<p class="course__total-item">Дата начала: <b>30.09 и 28.10</b></p>
 											<p class="course__total-item">Стоимость: <button class="course__total-link" data-modal="modalCallback">Узнать стоимость</button></p>
 										</div>
 										<form class="course__form js-form">
@@ -825,7 +825,7 @@
 							<div>
 								<div class="course">
 									<div class="course__left">
-										<div class="h2 color-main course__title">Семинар «Био-Имплантация»</div>
+										<div class="h2 color-main course__title">Курс «Био-Имплантация»</div>
 										<div class="course__sub-title">Особенности работы на высокопрочных дентальных имплантах AWI из диоксида циркония</div>
 										<ul class="course__list">
 											<li class="course__list-item">
@@ -865,8 +865,8 @@
 									</div>
 									<div class="course__right">
 										<div class="course__total">
-											<p class="course__total-item">Продолжительность: <b>2 дня</b></p>
-											<p class="course__total-item">Дата начала: <b>18 апреля</b></p>
+											<p class="course__total-item">Продолжительность: <b>1 день</b></p>
+											<p class="course__total-item">Дата начала: <b>30.09 и 28.10</b></p>
 											<p class="course__total-item">Стоимость: <button class="course__total-link" data-modal="modalCallback">Узнать стоимость</button></p>
 										</div>
 										<form class="course__form js-form">
