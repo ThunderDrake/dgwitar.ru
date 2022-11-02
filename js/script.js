@@ -95,8 +95,35 @@ $(document).ready(function() {
 	}
 
 	$('.content').css('margin-top', $('.header').outerHeight());
+    let switching = 0
+    let i = 1;
+    let tabList = document.querySelectorAll('.education [data-tab-id]');
+    function tabSwitch() {
+        let id = $('.education [data-tab-id]:not(.active)').data('tab-id');
+
+        tabList.forEach(el=>{
+            el.classList.remove('active');
+        })
+        tabList[i].classList.add('active');
+        if(i == tabList.length - 1 ) {
+            i = 0
+        } else {
+            i = ++i % tabList.length;
+        }
+        // tabList.removeClass('active');
+		// $('.education [data-tab-id]:not(.active)').addClass('active');
+
+		$('[data-tab="' + id + '"]').siblings('.tab-content').hide();
+		$('[data-tab="' + id + '"]').fadeIn(1000);
+		if ($('[data-tab="' + id + '"]').find('.courses').length) {
+			$('[data-tab="' + id + '"]').find('.courses').slick('setPosition');
+		}
+        switching = setTimeout(tabSwitch, 7000)
+    }
+    switching = setTimeout(tabSwitch, 7000)
 
 	$(document).on('click', '[data-tab-id]:not(.active)', function() {
+        clearTimeout(switching);
 		let id = $(this).data('tab-id'),
 			list = $(this).closest('.tab-list');
 
@@ -111,19 +138,13 @@ $(document).ready(function() {
 		} else {
 			list.removeClass('tab-list--red');
 		}
-		$('[data-tab="' + id + '"]').siblings('.tab-content').slideUp();
-		$('[data-tab="' + id + '"]').slideDown();
+		$('[data-tab="' + id + '"]').siblings('.tab-content').fadeOut();
+		$('[data-tab="' + id + '"]').fadeIn();
 		if ($('[data-tab="' + id + '"]').find('.courses').length) {
 			$('[data-tab="' + id + '"]').find('.courses').slick('setPosition');
 		}
 	});
-
-    function tabSwitch() {
-        let notActiveTab = $('.education [data-tab-id]:not(.active)');
-        notActiveTab.click()
-        setTimeout(tabSwitch, 7000)
-    }
-    setTimeout(tabSwitch, 7000)
+    
 
 	$('.partner__list').slick({
 		infinite: false,
