@@ -113,7 +113,7 @@ $(document).ready(function() {
         // tabList.removeClass('active');
 		// $('.education [data-tab-id]:not(.active)').addClass('active');
 
-		$('[data-tab="' + id + '"]').siblings('.tab-content').hide();
+		$('[data-tab="' + id + '"]').siblings('.tab-content').fadeOut(500);
 		$('[data-tab="' + id + '"]').fadeIn(1000);
 		if ($('[data-tab="' + id + '"]').find('.courses').length) {
 			$('[data-tab="' + id + '"]').find('.courses').slick('setPosition');
@@ -138,8 +138,8 @@ $(document).ready(function() {
 		} else {
 			list.removeClass('tab-list--red');
 		}
-		$('[data-tab="' + id + '"]').siblings('.tab-content').fadeOut();
-		$('[data-tab="' + id + '"]').fadeIn();
+		$('[data-tab="' + id + '"]').siblings('.tab-content').fadeOut(500);
+		$('[data-tab="' + id + '"]').fadeIn(1000    );
 		if ($('[data-tab="' + id + '"]').find('.courses').length) {
 			$('[data-tab="' + id + '"]').find('.courses').slick('setPosition');
 		}
