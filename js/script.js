@@ -118,6 +118,13 @@ $(document).ready(function() {
 		}
 	});
 
+    function tabSwitch() {
+        let notActiveTab = $('.education [data-tab-id]:not(.active)');
+        notActiveTab.click()
+        setTimeout(tabSwitch, 7000)
+    }
+    setTimeout(tabSwitch, 7000)
+
 	$('.partner__list').slick({
 		infinite: false,
 		arrows: false,
