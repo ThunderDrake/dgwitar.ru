@@ -976,8 +976,8 @@
 								<div class="opportunity__info"><b class="color-second">Предлагаем рассрочку</b> платежа в течении месяца до начала курса</div>
 							</div>
 							<div class="opportunity">
-								<img src="img/discount.png" alt="Скидка" class="opportunity__img">
-								<div class="opportunity__info">Приведи коллег <br>и получи <b class="color-second">скидку 10%</b> <br>на обучение</div>
+								<img src="img/discount.png" alt="Скидка" class="opportunity__img" width="140">
+								<div class="opportunity__info">Приведи коллег <br>и получи <b class="color-second">скидку 25%%</b> <br>на обучение</div>
 							</div>
 							<div class="opportunity">
 								<img src="img/question-small.png" alt="Повтор курса" class="opportunity__img">
@@ -1039,12 +1039,7 @@
 							</div>
 							<div>
 								<div class="partner__item">
-									<img src="img/partner/president.jpg" alt="ПрезиДЕНТ" class="partner__img">
-								</div>
-							</div>
-							<div>
-								<div class="partner__item">
-									<img src="img/partner/aurora.jpg" alt="АвроРА" class="partner__img">
+									<img src="img/partner/trilogy.jpg" alt="Трилогия" class="partner__img">
 								</div>
 							</div>
 							<div>
