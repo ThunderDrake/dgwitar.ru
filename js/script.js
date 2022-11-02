@@ -144,6 +144,11 @@ $(document).ready(function() {
 			$('[data-tab="' + id + '"]').find('.courses').slick('setPosition');
 		}
 	});
+    $(document).on("click", function(e) {
+        if (e.target.classList.contains('course') || $(e.target).parents(".course").length) {
+          clearTimeout(switching);
+        }
+      });
     
 
 	$('.partner__list').slick({
