@@ -228,6 +228,39 @@ $(document).ready(function() {
 		}, 150);
 	}, expSliderAutoplaySpeed);
 
+    
+    document.addEventListener('swiped-left', function(e){
+        if(e.target.classList.contains('experience__slider-img')){
+            let slides = expSlider.find('.experience__slider-item'),
+            activeIndex = expSlider.find('.experience__slider-item--active').index();
+            
+            expSlider.addClass('experience__slider--hidden');
+            setTimeout(function() {
+                expSlider.find('.experience__slider-item--active').removeClass('experience__slider-item--active');
+                expSlider.find('.experience__slider-item--next').removeClass('experience__slider-item--next');
+                expSlider.find('.experience__slider-item--nextafter').removeClass('experience__slider-item--nextafter');
+
+                if (slides.eq(activeIndex+1).length) {
+                    slides.eq(activeIndex+1).addClass('experience__slider-item--active');
+                } else {
+                    slides.eq(0).addClass('experience__slider-item--active');
+                }
+                if (expSlider.find('.experience__slider-item--active').next().length) {
+                    expSlider.find('.experience__slider-item--active').next().addClass('experience__slider-item--next');
+                } else {
+                    slides.eq(0).addClass('experience__slider-item--next');
+                }
+                if (expSlider.find('.experience__slider-item--next').next().length) {
+                    expSlider.find('.experience__slider-item--next').next().addClass('experience__slider-item--nextafter');
+                } else {
+                    slides.eq(0).addClass('experience__slider-item--nextafter');
+                }
+
+                expSlider.removeClass('experience__slider--hidden');
+            }, 150);
+        }
+    });
+
 	$('.courses').slick({
 		prevArrow: '<button type="button" class="slick-prev"><svg><use href="img/sprite.svg#left-2"></use></svg></button>',
 		nextArrow: '<button type="button" class="slick-next"><svg><use href="img/sprite.svg#right-2"></use></svg></button>'

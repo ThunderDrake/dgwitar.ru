@@ -1553,6 +1553,7 @@
 	<script src="js/jquery.inputmask.min.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script src="js/swiped-event.min.js"></script>
 	<script src="js/script.js?v=2"></script>
 	
 	<!-- Yandex.Metrika counter -->
