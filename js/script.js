@@ -314,7 +314,12 @@ function leadSend(form) {
     	email = form.find('[name=email]'),
     	faults = form.find('input').filter(function() {
     		if ($(this).attr('type') == 'text') {
-    			if ($(this).attr('name') == 'email' && $(this).data('required') && !/^[\w-\.]+@[\w-]+\.[a-z]{2,10}$/i.test($(this).val())) {
+                if ($(this).attr('name') == 'email' && $(this).data('required') && !/^[\w-\.]+@[\w-]+\.[a-z]{2,10}$/i.test($(this).val())) {
+                    $(this).closest('.field').addClass('error');
+					return true;
+    			}
+    			if ($(this).attr('name') == 'name' && !/^.{3,30}$/.test($(this).val())) {
+                    console.log($(this));
     				$(this).closest('.field').addClass('error');
 					return true;
     			}

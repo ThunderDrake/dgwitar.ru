@@ -23,6 +23,6 @@ $mail->addAddress('witaravi@yandex.ru');
 $mail->addAddress('dgwitar@yandex.ru');
 $mail->isHTML(true);
 $mail->Subject = 'Новое сообщение!';
-$mail->Body    = ''.$type.$name.$phone.$email.$messenger.$insteres.$course.'Сайт: '.$url;
+$mail->Body    = ''.$type.$name.$phone.$email.$messenger.$interes.$course.'Сайт: '.$url;
 $mail->AltBody = '';
 $mail->send();
