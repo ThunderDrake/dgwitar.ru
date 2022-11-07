@@ -1768,7 +1768,7 @@ img {
     display: block;
     position: absolute;
     top: -4.4rem;
-    right: calc(50% - 91.5rem);
+    right: -8%;
     background: url(../img/bg/implant-4.png) no-repeat center / contain;
     -webkit-animation: swing 2.5s alternate infinite;
             animation: swing 2.5s alternate infinite;
@@ -2930,6 +2930,7 @@ img {
 }
 
 .experience__slider-item {
+    display: block !important;
     background: rgb(var(--color-white));
     width: 67.2rem;
     height: 52.8rem;
@@ -4566,9 +4567,8 @@ img {
         background: url(../img/bg/event.png) no-repeat right top -10rem;
     }
 
-    .main::before,
-    .main::after {
-        display: none;
+    .main::before {
+        top: calc(70% + 13rem);
     }
 
     .main__form::before,
@@ -4638,7 +4638,7 @@ img {
     }
 
     .company::before {
-        display: none;
+        /* display: none; */
     }
 
     .footer::before {
@@ -4738,7 +4738,8 @@ img {
     }
 
     .about::before {
-        display: none;
+        font-size: 5rem;
+        line-height: 4rem;
     }
 
     
@@ -4759,11 +4760,10 @@ img {
         left: calc(50% - 5.4rem);
         bottom: calc(100% + 5.4rem);
     }
-/* 
-    .edge::before,
-    .edge::after {
-        display: none;
-    } */
+
+    .edge::before {
+        top: auto;
+    }
     
     .edge__img-container {
         margin: 0 auto 4rem;
@@ -5079,10 +5079,6 @@ img {
     }
 
     .result__circle {
-        display: none;
-    }
-
-    .review::before, .review::after {
         display: none;
     }
 
@@ -6116,5 +6112,17 @@ img {
 
     .modal {
         padding: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .technology::before {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .review::before, .review::after {
+        display: none;
     }
 }
