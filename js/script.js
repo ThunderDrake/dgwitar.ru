@@ -231,7 +231,6 @@ $(document).ready(function() {
     const gallery = new Viewer(document.querySelector('.experience__slider'), {
         navbar: false,
         title: false,
-        toolbar: false,
         movable: false
     });
     document.addEventListener('swiped-left', function(e){
