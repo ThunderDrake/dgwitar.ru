@@ -723,6 +723,57 @@
 						<div class="experience__slider-item">
 							<img src="img/experience/2.jpg" alt="Фото" class="experience__slider-img">
 						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/4.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/5.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/7.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/8.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/9.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/10.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/11.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/12.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/13.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/14.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/15.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/16.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/17.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/18.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/19.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/20.jpg" alt="Фото" class="experience__slider-img">
+						</div>
+						<div class="experience__slider-item">
+							<img src="img/experience/21.jpg" alt="Фото" class="experience__slider-img">
+						</div>
 					</div>
 				</div>
 			</section>
@@ -978,7 +1029,7 @@
 							</div>
 							<div class="opportunity">
 								<img src="img/discount.png" alt="Скидка" class="opportunity__img" width="140">
-								<div class="opportunity__info">Приведи коллег <br>и получи <b class="color-second">скидку 25%%</b> <br>на обучение</div>
+								<div class="opportunity__info">Приведи коллег <br>и получи <b class="color-second">скидку 25%</b> <br>на обучение</div>
 							</div>
 							<div class="opportunity">
 								<img src="img/question-small.png" alt="Повтор курса" class="opportunity__img">
